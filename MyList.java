@@ -123,6 +123,7 @@ public class MyList<E> {
             }
             E value = current.next.e;
             current.next = current.next.next;
+            size--;
             return value;
         }
         return null;
